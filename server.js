@@ -82,13 +82,13 @@ app.post('/users', (req, res) => {
   });
 });
 
-// 📌 GET: All users
+//GET: All users
 app.get('/users', (req, res) => {
   const users = readUsers();
   res.status(200).json(users);
 });
 
-// 📌 GET: Root
+// GET: Root
 app.get('/', (req, res) => {
   res.send('Server is up and running');
 });
